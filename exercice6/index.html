@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+Définir un nombre à deviner (et pourquoi pas avec Math.random()?)
+ Récupérer un nombre entré par l'utilisateur
+• Si le nombre de l'utilisateur est plus grand que celui à deviner, alerté (Nombre trop grand)
+• Si le nombre de l'utilisateur est plus petit que celui à deviner, alerté (Nombre trop petit)
+• Si le nombre est identique au NOMBRECIBLE, alerté (Félicitations, vous avez gagné)
+     -->
+
+     <script>
+        //  Définir un nombre à deviner
+        let nbRand = Math.floor(Math.random() * 6);
+
+        // Récupérer un nombre entré par l'utilisateur
+        let nb = prompt("Donner un nombre entre 0 et 5");
+        // Si le nombre de l'utilisateur est plus grand que celui à deviner, alerté (Nombre trop grand)
+        if (nb > nbRand) {
+             alert("Nombre trop grand")
+        } else if (nb < nbRand) {
+            alert("Nombre trop petit")
+        } else {
+            alert("Félicitations, vous avez déviné le nombre "+nbRand)
+        }
+        document.write("Le nombre a deviné était "+ nbRand);
+     </script>
+</body>
+</html>

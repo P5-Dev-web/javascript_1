@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        Documentation : étudiez le fonctionnement de confirm() en javascript
+        Créer un confirm() Javascript
+        Si l'utilisateur clique sur oui, afficher une image sinon, afficher un texte
+
+     -->
+     <p id="demo"></p>
+     <script>
+        //  if(confirm("Voulez-vous confirmer ?")){
+        //     //  Si l'utilisateur clique sur oui, afficher une image
+        //      document.getElementById("demo").innerHTML = "<img src='3.png'>"
+        //  } else {
+        //     //  sinon, afficher un texte
+        //      document.write("Vous avez cliqué sur Annuler")
+        //  }
+        (confirm('Voulez-vous confirmer ?')) ? document.getElementById("demo").innerHTML = "<img src='3.png'>" : document.write("Vous avez cliqué sur Annuler");
+     </script>
+</body>
+</html>

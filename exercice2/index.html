@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        Créer une fonction qui demande l'âge de l'utilisateur
+        Afficher le nombre de jours vécus que cela représente
+        Exemple avec 21 : "Vous avez vécu 7665 jours."
+     -->
+
+     
+     <script>
+        //  Créer une fonction qui demande l'âge de l'utilisateur
+         function age(){
+             let age = prompt("Donner votre age");
+             age = parseInt(age);
+             // calcule le nombre de jour vécu
+             let jours = age * 365;
+             document.write('Vous avez vécu ' + jours + ' jours')
+             //return jours;
+         }
+        // Afficher le nombre de jours vécus
+        //  age();
+     </script>
+     
+</body>
+</html>

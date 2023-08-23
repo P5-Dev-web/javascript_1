@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <!-- Déclarer une variable budget qui contient le budget de 
+            l’utilisateur. Déclarer une variable achats qui contient 
+            le montant d’achats de l’utilisateur. 
+            Afficher si le budget permet de payer les achats ou non. -->
+        <script>
+            let budget = prompt("Entrer votre budget");
+            budget = parseInt(budget);
+            let achats = prompt("Entrer votre dépense");
+            achats = parseInt(achats);
+            if (budget >= achats) {
+                alert('Le budget (' + budget + ' FCFA) permet de payer tous les achats (' + achats + ' FCFA)');
+            } else {
+                alert('Le budget ne (' + budget + ' FCFA) ne permet pas de payer tous les achats (' + achats + ' FCFA)');
+            }
+        </script>
+    </body>
+</html>

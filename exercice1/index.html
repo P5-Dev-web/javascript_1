@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Demander un nombre à l'utilisateur, calculer le modulo de ce nombre divisé par 5
+    Afficher le reste dans une phrase
+    Exemple avec 21 : "Si l'on divise 21 par 5, le reste est de 1"
+ -->
+
+ <script>
+     //demander un nombre à l'utilisateur
+     let a = parseFloat(prompt("Donner un nombre entier"));
+    //  a = parseFloat(a);
+
+     //calculer le modulo de ce nombre divisé par 5
+     let modulo = a % 5;
+
+     //Afficher le reste dans une phrase
+     document.write("Si l'on divise " +a + "par 5, le reste est de : " +modulo);
+ </script>
+</body>
+</html>

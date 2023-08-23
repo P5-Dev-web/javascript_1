@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+Demander l'âge actuel de l'utilisateur et un âge choisi au hasard (vous aurez donc besoin de deux variables)
+Afficher le nombre de jours vécus que cela représente et l'écart avec l'âge visé
+Exemple avec 21 et 45 : "Vous avez vécu 7665 jours. Il y a encore 8760 jours avant vos 45 ans."
+Complément : si l'âge visé est plus petit que l'âge actuel, signaler l'erreur (alert ou affichage dans la page
+     -->
+
+     <script>
+        //  Demander l'âge actuel de l'utilisateur
+        let age = prompt("Donner votre age");
+        age = parseInt(age);
+        // un âge visé 
+        let ageVise = 45;
+        let NbJourV = age * 365;
+
+            // si l'âge visé est plus petit que l'âge actuel, 
+            // signaler l'erreur (alert)
+        if (ageVise < age){
+            alert("L'age est trop grand")
+        } else {
+            // Afficher le nombre de jours vécus
+        document.write('Vous avez vécu ' + NbJourV);
+        document.write("<br>")
+            // Il y a encore 8760 jours avant vos 45 ans
+        let NbJourR = ((45 * 365) - NbJourV);
+        document.write('Il y a encore '+ NbJourR + ' jours avant vos 45 ans');
+        }
+
+        
+
+
+
+        
+
+     </script>
+</body>
+</html>
